@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+
+body{
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
 .wrapper{
     height: 100vh;
     overflow-y: auto;
@@ -17,6 +23,15 @@ header{
     z-index: -1;
 }
 
+.background,
+.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .background{
     transform: translateZ(-10px) scale(2);
 }
@@ -25,25 +40,57 @@ header{
     transform: translateZ(-5px) scale(1.5);
 }
 
-.background,
-.foreground{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-body{
-    margin: 0;
-    font-family: 'Fredoka One', cursive;
-}
-
 h1{
-    display: flex;
-    align-self: flex-start;
+    position: absolute;
+    top: 25%;
     font-size: 7rem;
     color: white;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 10px black;
+    opacity: 0.9;
 }
 
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+    padding: 15px;
+}
+
+.navbar,
+ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.right{
+    margin-right: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.25em;
+    transition: 0.5s;
+}
+
+a:hover{
+    background: rgba(244, 102, 89, 255);
+    text-shadow: 0 0 10px black;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.circle{
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(45deg, black 0%, purple 40%, blue 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 4px white;
+}
