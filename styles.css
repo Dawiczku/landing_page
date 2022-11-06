@@ -15,10 +15,10 @@ body{
 
 header{
     position: relative;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
 }
@@ -88,7 +88,7 @@ a:hover{
 
 .quote-section{
     color: white;
-    background: linear-gradient(45deg, purple 70%, blue);
+    background: coral;
     height: 30vh;
 }
 
@@ -113,10 +113,19 @@ a:hover{
     padding: 0 43px;
 }
 
-h1{
-    font-size: 3.5rem;
+h1,
+h2{
     color: white;
     text-shadow: 0 0 30px black;
+}
+
+h1{
+    font-size: 3.6rem;
+}
+
+h2{
+    font-size: 3rem;
+    padding: 1.5em;
 }
 
 p{
@@ -152,4 +161,36 @@ p{
 .header-btn:hover{
     box-shadow: 0 0 20px white;
     cursor: grab;
+}
+
+section{
+    margin-bottom: -20px;
+}
+
+.project-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(26, 0, 61, 1);
+    height:60vh;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+/* .preview{
+    height: 270px;
+    height: 270px;
+    border-radius: 15px;
+} */
+
+.recipe-preview{
+    width: 270px;
+    height: 270px;
+    border: 7px solid white;
+    border-radius: 25px;
 }
