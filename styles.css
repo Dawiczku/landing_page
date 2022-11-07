@@ -32,29 +32,6 @@ header{
     z-index: -1;
 }
 
-.quote-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateZ(5px) scale(1.5);
-}
-
-.quote-section{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(images/golden_hour.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    object-fit: cover;
-}
-
-footer{
-    border: 10px solid coral;
-}
-
 .background{
     transform: translateZ(-10px) scale(2);
 }
@@ -132,18 +109,19 @@ a:hover{
 
 h1,
 h2{
-    color: white;
-    text-shadow: 0 0 30px black;
+    color: white; 
 }
 
 h1{
     font-size: 3.3rem;
+    text-shadow: 0 0 30px black;
 }
 
 h2{
     font-size: 3rem;
     padding: 1.5em;
     margin: 0;  
+    text-shadow: 0 0 30px coral;
 }
 
 h3{
@@ -162,6 +140,11 @@ p{
     margin: 5px auto;
 }
 
+.project-description{
+    margin: 5px auto;
+    color: coral;
+}
+
 .credit{
     font-size: 1rem;
     margin: 0;
@@ -171,15 +154,19 @@ p{
     width: 32vw;
 }
 
+.header-btn,
+.signup-btn{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    transition: 0.5s;
+}
+
 .header-btn{
     border-radius: 80px;
     font-size: 1.5rem;
-    font-family: 'Fredoka One', cursive;
     padding: 30px 50px;
     border: 5px solid white;
     background: linear-gradient(rgba(151, 3, 202, 0.7), rgba(110, 5, 145, 1));
-    color: white;
-    transition: 0.5s;
     margin-top: 20px;
 }
 
@@ -212,7 +199,7 @@ p{
 .recipe-preview{
     width: 270px;
     height: 270px;
-    border: 7px solid white;
+    border: 7px solid coral;
     border-radius: 25px;
 }
 
@@ -220,3 +207,76 @@ footer{
     background: white;
     height: 8vh;
 }
+
+footer{
+    border: 10px solid coral;
+}
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateZ(5px) scale(1.5);
+}
+
+.quote-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/golden_hour.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.signup-section{
+    background:rgba(26, 0, 61, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+}
+
+.signup-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: gainsboro;
+    width: 60%;
+    height: 55%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px white;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+.signup-container-left > p{
+    font-size: 1.25rem;
+}
+
+.signup-container-left > p,
+h4{
+    color:rgba(26, 0, 61, 1);
+    margin: 5px auto;
+}
+
+.signup-btn{
+    height: 100px;
+    width: 280px;
+    background:rgba(26, 0, 61, 1);
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.signup-btn:hover{
+    background: white;
+    color:rgba(26, 0, 61, 1);
+    border: 10px solid rgba(26, 0, 61, 1);
+    cursor: grab;
+}
+
