@@ -32,6 +32,29 @@ header{
     z-index: -1;
 }
 
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateZ(5px) scale(1.5);
+}
+
+.quote-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/golden_hour.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    object-fit: cover;
+}
+
+footer{
+    border: 10px solid coral;
+}
+
 .background{
     transform: translateZ(-10px) scale(2);
 }
@@ -86,12 +109,6 @@ a:hover{
     box-shadow: 0 0 4px white;
 }
 
-.quote-section{
-    color: white;
-    background: coral;
-    height: 30vh;
-}
-
 .header-container{
     display: flex;
     justify-content: space-evenly;
@@ -120,17 +137,25 @@ h2{
 }
 
 h1{
-    font-size: 3.6rem;
+    font-size: 3.3rem;
 }
 
 h2{
     font-size: 3rem;
     padding: 1.5em;
+    margin: 0;  
+}
+
+h3{
+    color: white;
+    font-size: 2.8rem;
+    text-shadow: 0 0 30px coral;
+    margin: 5px 0;
 }
 
 p{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .description{
@@ -142,7 +167,7 @@ p{
     margin: 0;
 }
 
-.mayo-header{
+.header-img{
     width: 32vw;
 }
 
@@ -163,10 +188,6 @@ p{
     cursor: grab;
 }
 
-section{
-    margin-bottom: -20px;
-}
-
 .project-section{
     display: flex;
     flex-direction: column;
@@ -182,15 +203,20 @@ section{
     gap: 5em;
 }
 
-/* .preview{
+.preview{
     height: 270px;
     height: 270px;
     border-radius: 15px;
-} */
+}
 
 .recipe-preview{
     width: 270px;
     height: 270px;
     border: 7px solid white;
     border-radius: 25px;
+}
+
+footer{
+    background: white;
+    height: 8vh;
 }
